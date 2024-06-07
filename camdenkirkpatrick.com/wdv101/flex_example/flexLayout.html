@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flex Layout</title>
+  <link href="style2.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header><h2>C++ Basics</h2></header>
+    <img src="images/C++_logo.png" alt="C++ Logo" class="cpp" />
+    <nav>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">PROFILE</a></li>
+        <li><a href="">LOGOUT</a></li>
+      </ul>
+    </nav>
+    <div class="responsive-three-columns">
+      <div>
+        <h3>What is C++?</h3>
+        <p>
+          C++ is a high-level programming language that was developed as an
+          extension of the C programming language. It was created by Bjarne
+          Stroustrup in 1979 at Bell Labs as an enhancement to the C language.
+          C++ is known for its efficiency, flexibility, and performance,
+          making it suitable for a wide range of applications, including
+          systems software, game development, desktop applications, mobile
+          apps, and more.
+        </p>
+        <span>Key features of C++ include:</span>
+        <ol>
+          <li>
+            Object-Oriented Programming (OOP): C++ supports classes and
+            objects
+          </li>
+
+          <li>
+            Memory Management: Unlike many high-level languages, C++ provides
+            control over memory management.
+          </li>
+          <li>
+            Performance: C++ is known for its high performance, since it
+            doesn't need a virtual machine or interpreter.
+          </li>
+          <li>
+            Portability: C++ code can be compiled and executed on various
+            platforms.
+          </li>
+          <li>
+            Standard Template Library (STL): C++ includes a powerful library
+            called the Standard Template Library (STL), which gives developers
+            access to various data structures.
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h3>Setting up your first program</h3>
+        <p>
+          To create a C++ program, open your IDE of choice, and create a file
+          ending in ".cpp" (for example: helloWorld.cpp). Once you have done
+          that, you will need to make sure that you have a compiler that is
+          compatible with C++ installed, such as G++. After you have installed
+          and setup the comiler, you can begin writing your first program in
+          C++. In order for your program to input and output, you must write
+          <span>"#include &ltiostream&gt"</span> at the beginning of your program. The "#"
+          symbol tells your program that whatever follows it is part of the
+          Standard Template Library (STL), which is where useful C++ features
+          are stored. After that, you will write the "main function", where
+          the program will be executed. To write the main function, type: <span>"int
+            main() {return 0;}"</span>. This tells the program that if there are no
+          errors in your code, then your program should return "0" from the
+          main function, which will end your program. This is the setup for
+          every C++ program. So far, your C++ program should look like this:
+        <pre><span>#include &ltiostream&gt
+
+int main() {
+
+  return 0;
+}</span></pre>
+        </p>
+      </div>
+      <div>
+        <h3>Variables, Output, and Execution</h3>
+        <p>There are five basic data types that are important to know in C++:
+        <ul>
+          <li>Integers(int): stores an integer value Ex.(-1, 0, 1)</li>
+          <li>Float(float): stores a number with a fractional part Ex.(1.25, 0.67, -5.2)</li>
+          <li>String(string): stores an array of characters Ex.("Hello", "Bye!", "100")</li>
+          <li>Character(char): stores a single character Ex.('A', '&', '4')</li>
+          <li>Boolean(bool): stores the value "True" or "False"</li>
+        </ul>
+        To declare a variable, you must write the type ( See text in parentheses above), name the variable, and assign
+        it a
+        value, followed by
+        a ';'.
+        For example: int x = 20; If you are declaring a string, you must put the value in double quotes, and if you are
+        declaring a char, you must put the value in single qoutes (See above)
+        In order to ouput to the console, do: <span>std::cout &lt&lt "text you want to print;"</span>
+        If you want to print out one of your variables, just do: <span>"std::cout &lt&lt varName;"</span>
+        The last step is to compile and execute your program! To compile your program using G++, type the following into
+        your terminal: <span>"g++ fileName.cpp -o executableName"</span> The "executableName" will be the name that the
+        executable file is assigned to (default is "a.exe"). Now that you have compiled the program, you can now execute
+        it. To run your program, type the following into your terminal: <span>"executableName"</span>
+        </p>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="images/s1.png" alt="Basic C++ Program">
+      <img src="images/s2.png" alt="C++ program execution">
+    </div>
+    <footer>
+      <footer>
+        <a href="../homework.html">Homework Page</a>
+      </footer>
+  </div>
+</body>
+
+</html>

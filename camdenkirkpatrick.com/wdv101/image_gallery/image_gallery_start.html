@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Gallery Exercise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica", Arial, sans-serif;
+    }
+
+    #container {
+      background-color: lightgray;
+      padding: 0.5em;
+      width: 1200px;
+      margin: 1.1em auto;
+
+    }
+
+    header {
+      text-align: center;
+      padding: 25px;
+    }
+
+    .row {
+      display: flex;
+      border: 2px solid black;
+      justify-content: center;
+    }
+
+    figure {
+      background-color: white;
+      border: 1px solid black;
+      padding: 8px;
+      border-radius: 6px;
+      box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.65);
+      margin: 10px;
+    }
+
+    figure img {
+      border-radius: 20px;
+    }
+
+    figcaption {
+      text-align: center;
+      font-style: italic;
+      text-transform: capitalize;
+    }
+
+    @media screen and (max-width: 768px) {
+      #container {
+        width: 100%;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      figure img {
+        margin-bottom: 15px;
+      }
+
+      figure {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Image Gallery</h1>
+      <p>The img element is an inline element. As such just plain images (without text or figcaptions) will
+        automatically appear alongside each other and wrap when the container gets smaller. This is the nature of inline
+        elements (such as images) and do not require flex or float.</p>
+      <p>In this exercise we will embed the image within the figure element and apply the figcaption element to add a
+        caption to the image. These elements are block elements so we will add flexbox properties so that the gallery
+        will be responsive to varying viewport sizes.</p>
+      <p>The we will modify the layout so that the images appear in three columns when at desktop view.</p>
+    </header>
+
+    <!-- Photo Gallery -->
+    <div class="row">
+      <div class="column">
+        <figure> <img src="images/balloons.jpg" alt="colored balloons">
+          <figcaption>Brightly Colored Balloons</figcaption>
+        </figure>
+        <figure>
+          <img src="images/border_collie.jpg" alt="collie running in water">
+          <figcaption>Collie Running Through Water</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure> <img src="images/frog.jpg" alt="frog with black spots on a leaf">
+          <figcaption>Frog</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pepper_cob.jpg" alt="red pepper sitting oon corn">
+          <figcaption>Pepper on Corn</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure><img src="images/off_road.jpg" alt="off road cycling with first-person view">
+          <figcaption>Cycling In First Person View</figcaption>
+        </figure>
+        <figure>
+          <img src="images/beagle_puppy.jpg" alt="beagle puppy">
+          <figcaption>Beagle Puppy</figcaption>
+        </figure>
+      </div>
+    </div>
+
+
+
+
+
+  </div><!--close container div-->
+</body>
+
+</html>

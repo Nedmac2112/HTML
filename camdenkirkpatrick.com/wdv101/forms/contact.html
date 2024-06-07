@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us!</h1>
+        <p class="intro">
+            <em>Send us a message. We would love to hear from you!</em>
+        </p>
+        <form id="contact" name="contact" method="post" action="form_response_basic.php">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" val="Firstname" />
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" val="Lastname" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" />
+            </div>
+            <div class="form-group">
+                <label for="topic">Topic</label>
+                <select name="topic" id="topic">
+                    <option value="web_services">Web Development Services</option>
+                    <option value="graphic_design">Graphic Design</option>
+                    <option value="app_development">App Development</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label><br />
+                <textarea id="message" name="message">Enter your message...</textarea>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Submit" class="submit" />
+                <input type="reset" value="Reset" class="reset" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

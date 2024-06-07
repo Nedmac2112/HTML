@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    /* Sets the direction of the main axis (default is row) */
+    flex-direction: row;
+    /* default value is nowrap (items will stay on one line, and have a max size) */
+    flex-wrap: nowrap;
+    /* If there is left over space on the MAIN-AXIS, the space 
+    can be distributed to the elements in different ways (default is flex-start) */
+    justify-content: center;
+    /* Aligns items on the cross-axis (default is stretch) If a height is set, stretch will be over-written */
+    align-items: center;
+    /*If there is left over space on the CROSS-AXIS, the space 
+    can be distributed to the elements in different ways (default is flex-start) */
+    align-content: center;
+    background-color: lightgray;
+    border: 4px solid black;
+    height: 600px;
+}
+
+.flex-item {
+    /* If flex-wrap is set to wrap, each element will take up 1/3 of the container */
+    /* width: 33.33%; */
+    /* width: 200px; */
+    /* Sets the ideal size for each flex-item (It is different than width, because it controls the size along the main-axis, which can change*/
+    flex-basis: 50%;
+    /* height: 50px; */
+    /* Allows flex-items to take up the remaing space on the main-axis (default is 0) */
+    flex-grow: 0;
+    flex-shrink: 1;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container div:nth-child(1) {
+    background-color: rgb(255, 0, 0);
+    /* Allows you to overwrite align-items for a particular item (turn off align-content to see)*/
+    /* align-self: flex-start; */
+}
+
+.container div:nth-child(2) {
+    background-color: orange;
+}
+
+.container div:nth-child(3) {
+    background-color: yellow;
+
+}
+
+.container div:nth-child(4) {
+    background-color: lime;
+
+}
+
+.container div:nth-child(5) {
+    background-color: darkgreen;
+}
+
+.container div:nth-child(6) {
+    background-color: blue;
+
+}
+
+.container div:nth-child(7) {
+    background-color: turquoise;
+}
+
+.container div:nth-child(8) {
+    background-color: hotpink;
+}
+
+.container div:nth-child(9) {
+    background-color: purple;
+
+}

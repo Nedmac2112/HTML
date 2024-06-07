@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The First Moon Landing</title>
+  <meta charset="utf-8" />
+
+  <!-- Get started by adding the necessary bootstrap components in the head section: the link to the stylesheet, the viewport meta.Then add the script code in the bottom just before the close of the body. (see www.getbootstrap.com). We will use our own css for styling-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>The First Moon Landing</h1>
+
+      <!-- add some bootstrap buttons-->
+      <a type="button" class="btn btn-primary" href="https://en.wikipedia.org/wiki/Moon_landing" target="_blank">Wiki</a>
+      <a type="button" class="btn btn-secondary" href="../../index.html">Exit</a>
+    </div>
+  </header>
+
+  <!--Add a bootstrap navbar. Add the aporopriaqte bootstrap classes to each component. (w3schools) Then style using one of bootstraps colors. OR Copy and paste the code. Then enter your own hyperlinks and  text. You can use bootstraps color and background styling OR your own CSS.-->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Other Pages</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" style="margin: 30px 0">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item slide-one active"></div>
+          <div class="carousel-item slide-two"></div>
+          <div class="carousel-item slide-three"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Add a div class of row, then add a class of col to the divs. Bootstrap will automatically stack the columns when the viewport gets smaller. Do two columns first to see two columns. Then remove the comment and add a col class to the third. Then adjust the cols so that the middle col is larger than the other two. Style the text and background in each column using bootstrap background color to each column-->
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <h3>The Historic Moment</h3>
+          <p>On July 20, 1969, humanity achieved an unprecedented milestone when NASA's Apollo 11 mission successfully landed two astronauts, Neil Armstrong and Edwin "Buzz" Aldrin, on the surface of the moon. This monumental event marked the culmination of years of scientific research, technological innovation, and sheer determination. As millions of people around the world held their breath, Armstrong uttered those immortal words, "That's one small step for [a] man, one giant leap for mankind," as he became the first human to set foot on the lunar surface. Aldrin soon followed, and together they made history, forever altering our perception of what was possible in space exploration.</p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <h3>The Journey of Exploration</h3>
+          <p>The journey to the moon was not merely a physical one but also a testament to the ingenuity and resolve of the human spirit. From the launch of the Saturn V rocket to the intricate maneuvers required for lunar orbit insertion and descent, every aspect of the Apollo 11 mission was a testament to human achievement. The crew faced countless challenges and risks along the way, but through meticulous planning and unwavering determination, they overcame each obstacle. As Armstrong and Aldrin explored the lunar landscape, collecting samples and conducting experiments, they expanded our understanding of the universe and paved the way for future generations of explorers to follow.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>The Enduring Legacy</h3>
+          <p>The legacy of the first moon landing extends far beyond the achievements of a single mission. It serves as a symbol of human potential and the boundless possibilities that await us in the cosmos. The technological advancements made during the Apollo program continue to impact our lives today, from the development of satellite communications to the miniaturization of electronics. Moreover, the spirit of exploration ignited by Apollo 11 lives on in the efforts of space agencies and private companies around the world, as they strive to push the boundaries of space exploration ever further. As we look back on this historic moment, we are reminded of the power of collaboration, innovation, and the unyielding human spirit to overcome the greatest of challenges and reach for the stars.</p>
+          <p>
+        </div>
+        <div class="col-sm-6" id="margin-t">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Apollo 11
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+The Apollo 11 spacecraft, comprising the Command Module "Columbia" and Lunar Module "Eagle," encapsulates the pinnacle of human ambition and technological prowess. Launched atop the towering Saturn V rocket on July 16, 1969, it carried astronauts Neil Armstrong, Buzz Aldrin, and Michael Collins on an audacious mission to the moon. Serving as their sanctuary in the void of space, the Command Module provided crucial life support systems and navigation controls, while the Lunar Module facilitated the historic touchdown on the lunar surface. Through meticulous engineering and relentless dedication, the Apollo 11 spacecraft symbolized the collective endeavor of humanity to explore the unknown, inspiring generations to reach for the stars.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Neil Armstrong
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Neil Armstrong, an American astronaut born on August 5, 1930, in Wapakoneta, Ohio, etched his name in history as the first human to set foot on the moon during the Apollo 11 mission on July 20, 1969. His iconic words, "That's one small step for [a] man, one giant leap for mankind," resonate across the ages, symbolizing the culmination of years of dedication and bravery. Armstrong's remarkable career extended beyond his lunar landing, encompassing aeronautical engineering, naval service, and teaching, leaving an indelible mark on the collective imagination of humanity.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Buzz Aldrin
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Buzz Aldrin, born Edwin Eugene Aldrin Jr. on January 20, 1930, in Glen Ridge, New Jersey, forged his legacy as an astronaut, engineer, and advocate for space exploration. As the Lunar Module Pilot of Apollo 11, Aldrin followed Neil Armstrong onto the moon's surface, becoming the second human to set foot there. His contributions extended far beyond that historic moment, encompassing pioneering work on space rendezvous techniques and advocacy for the continued exploration of space. Aldrin's vision and determination have inspired countless individuals to reach for the stars, shaping the course of space exploration for generations to come.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" id="margin-t">
+         <h3>Satellites</h3>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img src="images/apollo11.jpg" class="card-img-top" alt="Apollo 11" />
+                <div class="card-body">
+                  <p class="card-text">
+The Apollo 11 spacecraft was a marvel of engineering, consisting of two primary components: the Command Module and the Lunar Module. The Command Module, named "Columbia," served as the living quarters and control center for the astronauts during their journey to and from the moon. It housed essential life support systems, navigation instruments, and communication equipment. The Lunar Module, known as "Eagle," was specifically designed to land on the moon's surface and return the astronauts to the Command Module. Together, these modules were meticulously crafted to withstand the harsh conditions of space travel and ensure the safety and success of the historic mission.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/sputnik.jpg" class="card-img-top" alt="Sputnik 1" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Sputnik 1, launched by the Soviet Union on October 4, 1957, marked the dawn of the Space Age as the world's first artificial satellite. This basketball-sized sphere, equipped with radio transmitters, orbited the Earth, emitting a distinctive radio signal that could be heard by amateur radio operators worldwide. Its successful launch shocked the world and triggered the space race between the United States and the Soviet Union, leading to significant advancements in space exploration and technology. Sputnik 1's legacy endures as a symbol of scientific achievement and human ingenuity in reaching beyond the confines of our planet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-info" role="alert">
+            --Check out these Wikipedia Pages--</div>
+          <div class="d-flex justify-content-center">
+         
+            <div class="btn-group">
+              <a href="https://en.wikipedia.org/wiki/Apollo_11" target="_blank" class="btn btn-primary">Apollo 11</a>
+              <a href="https://en.wikipedia.org/wiki/Sputnik_1" target="_blank" class="btn btn-primary">Sputnik I</a>
+              <a href="https://en.wikipedia.org/wiki/Satellite" target="_blank" class="btn btn-primary">Satellites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--close the container div here-->
+  </section>
+  <!--
+   Copy and past the second column to create a third column.-->
+
+  <!-- add bootstrap classes to color the background and text of the footer.-->
+
+  <footer>
+    <p>Author: Camden Kirkpatrick</p>
+  </footer>
+
+  <!--add the bootstrap jquery script here-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

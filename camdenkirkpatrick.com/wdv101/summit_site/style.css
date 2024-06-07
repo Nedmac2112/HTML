@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@media (max-width: 950px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .img-column {
+        justify-content: center;
+    }
+
+    #dog2 {
+        margin-top: 20px;
+    }
+}
+
+.container {
+    background: #95e1f6;
+    max-width: 1024px;
+    min-height: calc(100vh - 16px);
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+    column-gap: 30px;
+}
+
+.column {
+    flex: 1;
+}
+
+.columns .img-column {
+    display: flex;
+    align-items: center;
+}
+
+.img-column img {
+    width: 300px;
+    max-height: 60%;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.care img {
+    width: 70%;
+    height: 35%;
+    margin-bottom: 10px;
+}
+
+.care p {
+    height: 30%;
+}
+
+.care div {
+    display: flex;
+    justify-content: center;
+}
+
+.adopt img {
+    width: 30%;
+    height: auto;
+    margin: 4px;
+}
+
+.adopt p {
+    padding: 10px;
+    box-shadow: none;
+    margin-bottom: 30px;
+}
+
+.samoyed {
+    float: right;
+}
+
+.klee_kai {
+    float: left;
+}
+
+#people,
+#sleep {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 40%;
+    height: auto;
+}
+
+#underlined {
+    border-bottom: 2px solid rgb(255, 255, 0);
+}
+
+.contact {
+    color: red;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    background-color: #779198;
+}
+
+header {
+    border-bottom: 3px solid black;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0 15px;
+}
+
+nav ul li {
+    display: inline;
+    text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover,
+nav a:focus,
+footer a:focus {
+    color: rgb(255, 255, 255);
+}
+
+a:link,
+a:visited {
+    color: rgb(255, 255, 0);
+    text-decoration: none;
+}
+
+main {
+    border: 3px solid black;
+    margin: 0 10px;
+    margin-bottom: 40px;
+}
+
+
+main p {
+    border: 1px solid black;
+    padding: 4px;
+    box-shadow: 5px 5px 3px 1px #3e4143;
+    margin: 6px;
+}
+
+main img {
+    border: 2px solid rgb(255, 255, 0);
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    text-shadow: -1px 0 rgb(255, 255, 0), 0 1px rgb(255, 255, 0),
+        1px 0 rgb(255, 255, 0), 0 -1px rgb(255, 255, 0);
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-left: 30px;
+}
+
+p {
+    overflow: auto;
+    font-size: 18px;
+}
+
+footer {
+    border: 3px solid black;
+    margin: 140px 10px;
+    margin-bottom: 4px;
+}
+
+footer p {
+    margin: 5px 10px;
+}

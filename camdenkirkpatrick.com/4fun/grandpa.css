@@ -1,0 +1,168 @@
+@media (max-width: 600px) {
+  .div {
+    min-width: 100%;
+  }
+}
+
+@keyframes text-color {
+  from {
+    color: lime;
+  }
+
+  to {
+    color: red;
+  }
+}
+
+@keyframes rainbow-text {
+
+  0%,
+  100% {
+    color: red;
+  }
+
+  17% {
+    color: orange;
+  }
+
+  34% {
+    color: yellow;
+  }
+
+  51% {
+    color: green;
+  }
+
+  68% {
+    color: blue;
+  }
+
+  85% {
+    color: indigo;
+  }
+}
+
+@keyframes flyInFromLeft {
+  0% {
+    transform: translateX(-100%) rotate(0deg) scale(0.1);
+    opacity: 0;
+    filter: saturate(0%)
+  }
+
+  100% {
+    transform: translateX(0) rotate(360deg);
+    opacity: 1;
+    filter: saturate(150%)
+  }
+}
+
+
+.container1 {
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-top: rgb(255, 166, 0) solid 6px;
+  border-right: rgb(255, 166, 0) solid 6px;
+  border-bottom: rgb(0, 13, 255) solid 6px;
+  border-left: rgb(0, 13, 255) solid 6px;
+  border-radius: 15px;
+  padding: 0;
+}
+
+
+.container2 {
+  padding: 20px;
+  border-top: rgb(0, 13, 255) solid 6px;
+  border-right: rgb(0, 13, 255)solid 6px;
+  border-bottom: rgb(255, 166, 0)solid 6px;
+  border-left: rgb(255, 166, 0)solid 6px;
+  overflow: auto;
+}
+
+
+
+/* name | duration | easing-function | delay | iteration-count | direction | *fill-mode* |*play-state* */
+.seventy-five {
+  animation: text-color 1s linear infinite alternate;
+  text-decoration: underline;
+}
+
+
+
+
+.bottom-border {
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.rainbow {
+  animation: rainbow-text 3s linear infinite;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(255, 166, 0), rgb(0, 13, 255));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  /* color: lime; */
+  padding-bottom: 5px;
+  margin: 0;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  font-size: 45px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+}
+
+p.bottom-border {
+  padding-bottom: 5px;
+}
+
+
+img {
+  max-width: 50%;
+  min-width: 100px;
+  min-height: 100px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 0 black;
+  margin: 5px 0;
+  animation: flyInFromLeft 2s ease-in forwards;
+}
+
+main div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.gradient-text {
+  font-size: 48px;
+  font-weight: bold;
+  background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

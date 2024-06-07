@@ -1,0 +1,38 @@
+#box1 {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(188, 100%, 63%);
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+/* #box1 {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(188, 100%, 63%); */
+/* Sets the position relative to the viewport */
+/* position: fixed;
+    right: 0px;
+    bottom: 0px;
+} */
+
+/* #box1 {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(188, 100%, 63%); */
+/* Similar to fixed, but allows the element to occupy space */
+/* position: sticky;
+} */
+
+#box2 {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 100%, 63%);
+    /* Sets the position relative to the nearest ancestor (viewport by default), and is pulled out of normal flow
+    If an element containing the absolute element is set to anything but static,
+    then it becomes the container for the absolute element */
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}

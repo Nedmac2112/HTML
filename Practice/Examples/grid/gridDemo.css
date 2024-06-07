@@ -1,0 +1,52 @@
+/* Example 1 */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    /* Sets the size for implicitly created rows */
+    /* grid-auto-rows: 100px; */
+    /* You can change it so that colums are created implicitly instead of rows */
+    grid-auto-flow: column;
+    /* Sets the size for implicitly created columns */
+    grid-auto-columns: 100px;
+    border: 4px solid black;
+    border-radius: 8px;
+}
+
+.item {
+    background-color: rgb(245, 93, 93);
+    border: 8px solid red;
+    padding: 5px;
+}
+
+
+.item-1 {
+    grid-column: 1 / 7;
+    grid-row: 1 / 3;
+}
+
+/* Using span doesn't explicitly define the ending and starting position, which will allow the item to move around. Only use span when you don't care if the item moves. */
+.item-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+/* You can also over-lap items */
+.item-2 {
+    grid-area: 2 / 4 / 4 / 6;
+    z-index: 1;
+}
+
+/* row-start col-start row-end col-end
+You can also use negative numbers (-1 means last row/column)*/
+.item-3 {
+    grid-area: 3 / 1 / -1 / -1;
+}

@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+#margin-t {
+  margin-top: 10px;
+}
+
+.slide-one {
+  background-image: url(images/astro.jpg);
+}
+
+.slide-two {
+  background-image: url(images/planet.jpg);
+}
+
+.slide-three {
+  background-image: url(images/shuttle.jpg);
+}
+
+.carousel-item {
+  height: 350px;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+header {
+  background-color: lightskyblue;
+  padding: 15px 0;
+}
+
+header div.container {
+  outline: none;
+  text-align: center;
+}
+
+nav div.container {
+  outline: none;
+  border: 3px solid blue
+}
+
+section {
+  background-color: lightgray;
+  padding: 50px 0;
+}
+
+.accordion {
+  margin-top: 10px;
+}
+
+.btn-group {
+  text-align: center;
+  overflow: auto;
+}
+
+.alert {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+div a {
+  text-align: center !important;
+}
+
+nav div {
+  background-color: rgb(114, 167, 236);
+}
+
+footer {
+  background-color: lightgreen;
+  height: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+[class^="col-"] {
+  border: 2px solid blue;
+}
+
+.row {
+  padding: 20px;
+}
+
+.container {
+  outline: 4px solid gray;
+  padding: 0;
+}

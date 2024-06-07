@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Adventure Travel</title>
+</head>
+
+<body>
+<a id="top"></a>
+  <div class="container black-border-1px">
+    <header>
+      <img src="images/banner.jpg" alt="adventure travel banner" />
+      <nav>
+        <ul>
+          <li><a class="nav-link" href="home.html">Home</a></li>
+          <li>
+            <a class="nav-link" href="adventureAdvantages.html">Adventure Advantages</a>
+          </li>
+          <li>
+            <a class="nav-link" href="destinations.html">Destinations</a>
+          </li>
+          <li><a class="nav-link" href="FAQ.html">FAQ</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+
+
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact</h1>
+      <div class="black-border-1px">
+        <p>
+          Have questions or ready to start planning your next adventure? Reach
+          out to us today! Our team at Adventure Travel is here to assist you
+          every step of the way. Simply fill out the form below or give us a
+          call toll-free at 1-800-123-4567. We look forward to helping you
+          create unforgettable memories!
+        </p>
+      </div>
+      <form method="post" action="contact.php">
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <div class="flex-form">
+            <label for="firstName">First Name: </label>
+            <input type="text" name="firstName" id="firstName" placeholder="first name" />
+          </div>
+
+          <div class="flex-form">
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="lastName" placeholder="last name" />
+          </div>
+
+          <div class="flex-form">
+            <label for="address">Street Address: </label>
+            <input type="text" name="address" id="address" placeholder="street address" />
+          </div>
+
+          <div class="flex-form">
+            <label for="city">City: </label>
+            <input type="text" name="city" id="city" placeholder="city name" />
+          </div>
+
+          <div class="flex-form">
+            <label for="state">State: </label>
+            <select name="state">
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+          </div>
+
+          <div class="flex-form">
+            <label for="Zip">Zip: </label>
+            <input type="text" name="zip" id="zip" />
+          </div>
+
+          <div class="flex-form">
+            <label for="emailAddress">Email Address: </label>
+            <input type="text" name="emailAddress" id="emailAddress" placeholder="name@anywhere.com" />
+          </div>
+
+          <div class="flex-form">
+            <label for="phone">Phone: </label>
+            <input type="text" name="phone" id="phone" placeholder="123-456-7890" />
+          </div>
+
+          <div class="flex-radio">
+            <div>
+              <input type="radio" name="phonetype" id="cell" value="cell" checked />
+              <label for="cell">Cell</label>
+            </div>
+            <div>
+              <input type="radio" name="phonetype" id="home" value="home" />
+              <label for="home">Home</label>
+            </div>
+            <div>
+              <input type="radio" name="phonetype" id="work" value="work" />
+              <label for="work">Work</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Adventure Options</legend>
+          <p class="form-p">
+            <b>Choose an adventure that interests you</b>
+          </p>
+
+          <div class="flex-radio">
+
+
+            <div>
+              <input type="checkbox" name="utah_family" id="utah_family_checkbox" value="UT Family" />
+              <label for="utah_family_checkbox">UTAH FAMILY</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="alberta_banff" id="alberta_banff_checkbox" value="Alberta Banff" />
+              <label for="alberta_banff_checkbox">ALBERTA | BANFF</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="arizona_utah" id="arizona_utah_checkbox" value="Arizona Utah" />
+              <label for="arizona_utah_checkbox">ARIZONA / UTAH</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="montana_glacier" id="montana_glacier_checkbox" value="MO Glacier" />
+              <label for="montana_glacier_checkbox">MONTANA | GLACIER NATIONAL PARK</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="utah_bryce_zion" id="utah_bryce_zion_checkbox" value="UT Bryce" />
+              <label for="utah_bryce_zion_checkbox">UTAH | BRYCE CANYON & ZION</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="wyoming_montana" id="wyoming_montana_checkbox" value="Wyoming Montana" />
+              <label for="wyoming_montana_checkbox">WYOMING / MONTANA</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="arizona_grand_canyon" id="arizona_grand_canyon_checkbox" value="AZ Grand Canyon" />
+              <label for="arizona_grand_canyon_checkbox">ARIZONA | GRAND CANYON FAMILY</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="california_yosemite" id="california_yosemite_checkbox" value="CA Yosemite" />
+              <label for="california_yosemite_checkbox">CALIFORNIA | YOSEMITE FAMILY</label>
+            </div>
+
+          </div>
+
+          <p class="form-p" style="text-align: center">Questions? Send us a message.</p>
+
+          <div style="justify-content: center; " class="flex-form">
+            <label style="margin: 0 4px 0 0;" for="inputMessage">Message: </label>
+            <textarea name="inputMessage" id="inputMessage"> </textarea>
+          </div>
+        </fieldset>
+
+        <div class="flex-buttons">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <pre>
+<a href="#top">Back to Top</a>
+Adventure Travel
+3450 Conhost Avenue
+Boulder Colorado 12345
+(317) 555-7414
+&copy; 2024 Adventure Travel. All rights reserved.
+<a href="/index.html">Exit Adventure Site</a></pre>
+      <img src="images/AT_logo.jpg" alt="advenure travel logo" />
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!--
+		Class example_Fixed Layouts
+	-->
+
+	<title>Single Column Fixed Layout</title>
+
+	<style type = "text/css">
+	
+/*  The universal selector is used to apply to all. Some browsers, bu default, add a margin and padding value. This is undesirable in our layout. The margin and properties value of 0 then "zeros out" any default browser value.*/
+
+*  { 
+	margin:0;
+	padding:0;
+	}
+
+	body  {
+		background-color: beige;
+		}
+
+
+	/*Structure*/
+	
+	/* the container ID is necessary as a container for all elements. We use an id as there is no semantic element for a container. Like a class, you must call the ID in a div in the html.*/
+
+	#container
+		{
+		width:930px;
+		border-width:1px;
+		margin:20px auto;
+		background-color: white;
+		border:2px solid black;
+		border-radius: 25px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+		}
+
+	header  {
+		padding: 10px;
+		background-color: yellow;
+	    border-top-left-radius: 25px;
+	    border-top-right-radius: 25px;
+
+		}
+		
+		
+	nav  {
+		padding: 10px;
+		color:white;
+		background-color: black;
+		}
+
+
+	main
+		{
+		padding: 15px;
+		background-color:aqua;
+		}
+
+	.columns
+	{
+		column-count: 3;
+		column-gap: 40px;
+		column-rule: 4px solid black;
+	}
+
+	.columns h2
+	{
+		column-span: all;
+		margin-bottom: 10px;
+	}
+	
+
+
+	footer  {
+	    color:white;
+		padding: 10px;
+		background-color: green;
+		text-align: center;
+	    border-bottom-left-radius: 24px;
+	    border-bottom-right-radius: 24px;
+		}
+		
+		
+
+
+	</style>
+
+
+
+</head>
+
+<body>
+<div id="container"><!-- The container is an ID in the CSS. As such it must be called in the html div-->
+<header>
+
+<h1>This is the heading section.</h1>
+<p>A header banner image and some text is usually placed here.</p>
+
+</header>
+
+<nav>
+ <h3>This is the navbar</h3>
+</nav>
+
+
+<main class="columns">
+<h2 class="columns">This is the main section. This can span columns</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum quam placerat purus iaculis, vel accumsan tortor facilisis. Mauris vitae imperdiet nulla, in ultricies mauris. Pellentesque vel lacus eu ipsum blandit hendrerit. Morbi nec turpis metus. Ut iaculis purus non enim porttitor, ornare vestibulum nisl malesuada. Fusce vitae nunc sed diam placerat iaculis. Sed mollis neque quis tempor adipiscing. Vivamus nisl purus, imperdiet consectetur dolor in, tempor ultrices lorem. Cras venenatis, sapien sed posuere tempor, neque leo commodo velit, nec vehicula massa mi blandit orci. Cras cursus, neque egestas rutrum blandit, ipsum enim suscipit metus, sit amet aliquam tellus odio ut orci. Vivamus consectetur suscipit justo rutrum euismod.</p>
+<br/>
+<p>
+Donec pellentesque tellus eu mi rhoncus, vitae gravida est congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris venenatis lacus quis justo sodales, vitae scelerisque mauris vehicula. Fusce libero lectus, placerat ac nisl sit amet, interdum mollis justo. Aenean tincidunt nibh lobortis erat euismod, nec scelerisque lectus vehicula. Nunc dapibus lacinia velit, non hendrerit felis tempor id. Vivamus a lacus dolor. Donec varius purus nec vulputate consectetur. Sed malesuada cursus est, sodales vulputate nisi vehicula eu. Nam erat nisi, gravida id urna eu, tincidunt rhoncus purus. Nullam bibendum ultricies orci a tincidunt. Pellentesque tincidunt tellus at sapien ultrices, quis cursus diam tempor. Ut interdum magna dolor, a viverra arcu egestas eu. Mauris ac leo quis risus posuere tempus. Pellentesque urna mi, viverra sed euismod dignissim, eleifend non turpis. Praesent augue leo, varius sit amet nibh quis, tempor cursus nisi. </p>
+
+</main> <!--end main-->
+
+<footer>
+	<p>This is the footer. The floats are cleared.</p>
+</footer>
+
+</div>   <!--end div container-->
+
+<!--It is always a good idea to comment the close of any div. Web pages can sometimes contain many divs and you will want to keep track of which div you are closing.-->
+</body>
+
+
+</html>
+
+
+
+
+
+
+

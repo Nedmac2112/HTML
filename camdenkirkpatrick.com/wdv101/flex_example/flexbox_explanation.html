@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Practice with flex direction by changning the direction from row (which is the default) to column. Notice the differences.
+
+Change back to row for the following:
+
+Practice with horizontal positioning by adding the varying values to the justify-content property: flex-start (default), center, flex-end, space-around, space-between.
+
+Practice with vertical positioning by adding the varying values to the align items property: stretch (default), flex-start, center, flex-end, space-around, space-between.
+
+*/
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #1f74ad;
+        height: 400px;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How Flexbox Works</h1>
+    <p>
+      Flexbox is a newer method of layout that allows for flexible positioning
+      of elements. To start this the container holding all elements must have
+      the <strong>display:flex</strong> property and value in the css
+    </p>
+    <p></p>
+    <p>
+      Flex layout is one dimensional in that elements are positionedin either
+      horizontally using the "flex-direction" property. The flex-direction value
+      can be either row OR column. However, the default direction is always row,
+      so flex will flex horizontally unless told to flex vertically using the
+      column value. the CSS property for this is flex-direction.
+    </p>
+
+    <p>
+      The <strong>flex-wrap: wrap</strong> specifies that the flex items will
+      wrap if necessary:
+    </p>
+
+    <p>
+      If the direction is row, elements can be positioned
+      <em>horizontally</em> by using the
+      <strong>justify-content</strong> property.
+    </p>
+    <p></p>
+    <p>
+      There are several positions: start is the default and will ways start on
+      the left, center, then end will position to start on the right.
+      "space-around" will add equal space around each item. "space-between' will
+      add equal space in-between each item.
+    </p>
+
+    <p>
+      If the direction is row, lements can be positioned <em>vertically</em> by
+      using the <strong>align-items</strong> property.
+    </p>
+    <p></p>
+    <p>
+      There are several positions: start is the default and will ways start on
+      the top, center, then end will position to start on the bottom.
+      "space-around" will add equal space around each item. "space-between' will
+      add equal space in-between each item. The "stretch " value of the
+      align-items property fill stretch the element from top to bottom. This is
+      the default so this will happen automatically if there is no align-items
+      listed.
+    </p>
+
+    <p>
+      To practice with Flexbox properties, open this file in a text editor. Read
+      the comments in the head section as a guide.
+    </p>
+
+    <div class="flex-container">
+      <div>
+        <h3>Box 1</h3>
+        <p>Content</p>
+      </div>
+
+      <div>
+        <h3>Box 2</h3>
+        <p>Content</p>
+      </div>
+
+      <div>
+        <h3>Box 3</h3>
+        <p>Content</p>
+      </div>
+
+      <div>
+        <h3>Box 4</h3>
+        <p>Content</p>
+      </div>
+
+      <div>
+        <h3>Box 5</h3>
+        <p>Content</p>
+      </div>
+
+      <div>
+        <h3>Box 6</h3>
+        <p>Content</p>
+      </div>
+    </div>
+
+    <p>Try resizing the browser window.</p>
+  </body>
+</html>
